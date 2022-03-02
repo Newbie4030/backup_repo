@@ -1,0 +1,55 @@
+Started by user [8mha:////4D+30W+ebHSN30AQcxXfwgiI/M5vrC0+GrEsGFzMR7B8AAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL9xKRkAGDVhlq+AAAA[0mabc
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/java-project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/java-project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Newbie4030/java-project.git # timeout=10
+Fetching upstream changes from https://github.com/Newbie4030/java-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/Newbie4030/java-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 649d8b1484235ea186b060fae08c5ca1598a8327 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 649d8b1484235ea186b060fae08c5ca1598a8327 # timeout=10
+Commit message: "Added time stamp to make each run unique (sign of life)"
+ > git rev-list --no-walk 649d8b1484235ea186b060fae08c5ca1598a8327 # timeout=10
+[java-project] $ mvn clean package
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.coveros.demo:helloworld >---------------------
+[INFO] Building Hello World 1.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4OGcoqe3JPLI7QhQdBQf//SeW/3dNW5RGKOA8ULpY87bAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ helloworld ---
+[INFO] Deleting /var/lib/jenkins/workspace/java-project/target
+[INFO] 
+[8mha:////4OGcoqe3JPLI7QhQdBQf//SeW/3dNW5RGKOA8ULpY87bAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ helloworld ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/java-project/src/main/resources
+[INFO] 
+[8mha:////4OGcoqe3JPLI7QhQdBQf//SeW/3dNW5RGKOA8ULpY87bAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ helloworld ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/lib/jenkins/workspace/java-project/target/classes
+[INFO] 
+[8mha:////4OGcoqe3JPLI7QhQdBQf//SeW/3dNW5RGKOA8ULpY87bAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ helloworld ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/java-project/src/test/resources
+[INFO] 
+[8mha:////4OGcoqe3JPLI7QhQdBQf//SeW/3dNW5RGKOA8ULpY87bAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ helloworld ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4OGcoqe3JPLI7QhQdBQf//SeW/3dNW5RGKOA8ULpY87bAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ helloworld ---
+[INFO] No tests to run.
+[INFO] 
+[8mha:////4OGcoqe3JPLI7QhQdBQf//SeW/3dNW5RGKOA8ULpY87bAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ helloworld ---
+[INFO] Building jar: /var/lib/jenkins/workspace/java-project/target/helloworld-1.1.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.312 s
+[INFO] Finished at: 2022-02-26T08:24:54Z
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

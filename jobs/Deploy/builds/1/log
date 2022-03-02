@@ -1,0 +1,66 @@
+Started by upstream project "[8mha:////4AO3p8rolR8WbnPQ40eip6auOnJ3uAPvnJ94UOZB3CmfAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/az8JH2n0sycFH0Ahtvdn8AAAAA=[0mBuild" build number [8mha:////4HU+iBOIxt7mRndOvKsEcSYNzuMZojCh0XKLTmtiqeU2AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBh79rPwkfafSzJwUfUMApl7aLsEAAAA=[0m1
+originally caused by:
+ Started by user [8mha:////4D+30W+ebHSN30AQcxXfwgiI/M5vrC0+GrEsGFzMR7B8AAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL9xKRkAGDVhlq+AAAA[0mabc
+Running as SYSTEM
+Building remotely on [8mha:////4L4iUetx2kYlHE/iSL8U5E8XE4yquHJ11R1M0FBAfKOoAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/TygO40BLFLuqcQAAAA=[0mnode3 in workspace /home/jenkins/node3/node3/workspace/Deploy
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Newbie4030/java-project.git
+ > git init /home/jenkins/node3/node3/workspace/Deploy # timeout=10
+Fetching upstream changes from https://github.com/Newbie4030/java-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/Newbie4030/java-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Newbie4030/java-project.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision bf07e29c21453fd5b56f0b47eee6e2a6df2faf07 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f bf07e29c21453fd5b56f0b47eee6e2a6df2faf07 # timeout=10
+Commit message: "fd"
+First time build. Skipping changelog.
+[Deploy] $ cmd /c call /tmp/jenkins13253183389272019322.bat
+FATAL: command execution failed
+java.io.IOException: error=2, No such file or directory
+	at java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:340)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:271)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1107)
+Also:   hudson.remoting.Channel$CallSiteStackTrace: Remote call to node3
+		at hudson.remoting.Channel.attachCallSiteStackTrace(Channel.java:1800)
+		at hudson.remoting.UserRequest$ExceptionResponse.retrieve(UserRequest.java:356)
+		at hudson.remoting.Channel.call(Channel.java:1001)
+		at hudson.Launcher$RemoteLauncher.launch(Launcher.java:1121)
+		at hudson.Launcher$ProcStarter.start(Launcher.java:508)
+		at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:144)
+		at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:92)
+		at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:803)
+		at hudson.model.Build$BuildExecution.build(Build.java:197)
+		at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:513)
+		at hudson.model.Run.execute(Run.java:1906)
+		at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+		at hudson.model.ResourceController.execute(ResourceController.java:97)
+		at hudson.model.Executor.run(Executor.java:429)
+Caused: java.io.IOException: Cannot run program "cmd" (in directory "/home/jenkins/node3/node3/workspace/Deploy"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1128)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1071)
+	at hudson.Proc$LocalProc.<init>(Proc.java:252)
+	at hudson.Proc$LocalProc.<init>(Proc.java:221)
+	at hudson.Launcher$LocalLauncher.launch(Launcher.java:996)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:508)
+	at hudson.Launcher$RemoteLaunchCallable.call(Launcher.java:1390)
+	at hudson.Launcher$RemoteLaunchCallable.call(Launcher.java:1333)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:211)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:376)
+	at hudson.remoting.InterceptingExecutorService.lambda$wrap$0(InterceptingExecutorService.java:78)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,23 @@
+Started by user [8mha:////4D+30W+ebHSN30AQcxXfwgiI/M5vrC0+GrEsGFzMR7B8AAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL9xKRkAGDVhlq+AAAA[0mabc
+Running as SYSTEM
+Building remotely on [8mha:////4ATe2K/f/KZ6uG8Ca8sN7Z0ofaLmYxbTUm5eEu2yr1ceAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/TygO40AumLp3sQAAAA=[0mnode2 in workspace /home/jenkins/workspace/c-projects
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/jenkins/workspace/c-projects/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Newbie4030/c-project.git # timeout=10
+Fetching upstream changes from https://github.com/Newbie4030/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/Newbie4030/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 319e337588a3ebe440aea962aed4644f1fb5b325 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 319e337588a3ebe440aea962aed4644f1fb5b325 # timeout=10
+Commit message: "all c files added"
+ > git rev-list --no-walk 319e337588a3ebe440aea962aed4644f1fb5b325 # timeout=10
+[c-projects] $ /bin/sh -xe /tmp/jenkins3805813321482044093.sh
++ cd /var/lib/jenkins/workspace/c-projects
+/tmp/jenkins3805813321482044093.sh: 2: cd: can't cd to /var/lib/jenkins/workspace/c-projects
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,26 @@
+Started by user [8mha:////4D+30W+ebHSN30AQcxXfwgiI/M5vrC0+GrEsGFzMR7B8AAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL9xKRkAGDVhlq+AAAA[0mabc
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/c-projects
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/c-projects/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Newbie4030/c-project.git # timeout=10
+Fetching upstream changes from https://github.com/Newbie4030/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/Newbie4030/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 319e337588a3ebe440aea962aed4644f1fb5b325 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 319e337588a3ebe440aea962aed4644f1fb5b325 # timeout=10
+Commit message: "all c files added"
+ > git rev-list --no-walk 319e337588a3ebe440aea962aed4644f1fb5b325 # timeout=10
+[c-projects] $ /bin/sh -xe /tmp/jenkins9097870938012398180.sh
++ cd /var/lib/jenkins/workspace/c-projects
++ make
+gcc -c main.c
+make: gcc: Command not found
+make: *** [Makefile:4: main.o] Error 127
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

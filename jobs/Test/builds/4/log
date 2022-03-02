@@ -1,0 +1,21 @@
+Started by upstream project "[8mha:////4JQ+dqPZQwWnup7d1yZkupFeV/tV2++AAjB4a+fAel4/AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/az8JH2X1IKc/Ep9ANFMbsTBAAAA[0mDeploy" build number [8mha:////4EWNYlMD6mPgP9wXDHjrLPlYxD36wq4ufMzSD/ms2vOoAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBl79rPwkfZfUgpz8Sn0TAAsKO7/CAAAA[0m4
+originally caused by:
+ Started by GitHub push by Newbie4030
+Running as SYSTEM
+Building remotely on [8mha:////4L4iUetx2kYlHE/iSL8U5E8XE4yquHJ11R1M0FBAfKOoAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/TygO40BLFLuqcQAAAA=[0mnode3 in workspace /home/jenkins/node3/node3/workspace/Test
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/jenkins/node3/node3/workspace/Test/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Newbie4030/java-project.git # timeout=10
+Fetching upstream changes from https://github.com/Newbie4030/java-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/Newbie4030/java-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 2b2929ce6dddefdd01ec0b0b279d157155740198 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 2b2929ce6dddefdd01ec0b0b279d157155740198 # timeout=10
+Commit message: "Update README.md"
+ > git rev-list --no-walk 2b2929ce6dddefdd01ec0b0b279d157155740198 # timeout=10
+Finished: SUCCESS

@@ -1,0 +1,11 @@
+commit f9e0b63f04a783461b8f24ccf0e8b84d023b08a7
+tree 10407382a933dc7d84c24d7f53d7d315b130071a
+parent 5ceb7596e38d5d75a8b1dacc8c371a3344337adc
+author RrahulSurre <86652324+Newbie4030@users.noreply.github.com> 2022-02-26 07:12:10 +0530
+committer GitHub <noreply@github.com> 2022-02-26 07:12:10 +0530
+
+    Update big3.c
+    
+    error removed
+
+:100644 100644 0bc3d0ee69d7a891f25aea7140c05beba617248b a16e2f38f31be04310593a4f8d4de432c3404e80 M	big3.c
